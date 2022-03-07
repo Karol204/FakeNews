@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            margin-left: 20%;
+        }
+table, th, td {
+  border:1px solid black;
+}
+</style>
+</head>
+<body>
+<header>
+    <h1>Lista  TROLL kont i FAKENEWSOW</h1>
+</header>
+
+    <table style="width:60%">
+  <tr>
+    <th>Nazwa</th>
+    <th>Opis</th>
+    <th>Link</th>
+  </tr>
+        {% for i in all_paged %}
+  <tr>
+    <td>{{ i.name }}</td>
+    <td>{{ i.description }}</td>
+    <td>{{ i.link }}</td>
+  </tr>
+        {% endfor %}
+
+</table>
+
+{% block content %}
+
+
+{% endblock %}
+<button><a href="form">Dodaj FAKE-a</a></button>
+</body>
+</html>
