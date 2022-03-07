@@ -1,0 +1,1 @@
+web: gunicorn dezinfo.wsgi --log-file -
